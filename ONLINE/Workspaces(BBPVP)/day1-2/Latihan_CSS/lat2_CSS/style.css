@@ -1,0 +1,148 @@
+
+/* 1. Pengaturan dasar halaman */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #303846;
+    background-color: #f5f5f5;
+}
+
+/* 2. Judul halaman di bagian atas */
+.judul {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.judul h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+/* 3. Bagian dengan gambar background */
+.hero {
+    min-height: 480px;
+    padding: 60px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.15),
+            rgba(0, 0, 0, 0.15)
+        ),
+        url("../../assets/coding-img.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-2 {
+    min-height: 480px;
+    padding: 60px 20px;
+
+    background-color: #007bbd;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 4. Kotak konten transparan */
+.content-card {
+    width: 100%;
+    max-width: 850px;
+    padding: 32px;
+    border-radius: 12px;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.content-card-2 {
+    width: 100%;
+    max-width: 850px;
+    padding: 32px;
+    border-radius: 12px;
+
+    background-color: #eee;
+    color: #131212;
+
+    text-align: center;
+}
+
+.content-card-2 code{
+    color: #bd5875;
+    background-color: #f4dce4;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+
+/* 5. Judul di dalam kotak */
+.content-card h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+    font-size: 22px;
+}
+
+/* 6. Paragraf penjelasan */
+.content-card p {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* 7. Kotak contoh kode */
+.code-example {
+    background-color: #f5f1e8;
+    color: #555555;
+    padding: 12px;
+    margin-top: 24px;
+}
+
+.code-example p {
+    margin: 4px 0;
+}
+
+.code-example code {
+    color: #bd5875;
+    background-color: #f4dce4;
+    padding: 3px 6px;
+    border-radius: 3px;
+}
+
+/* 8. Penyesuaian untuk layar kecil */
+@media (max-width: 600px) {
+    .judul h1 {
+        font-size: 21px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 30px 16px;
+    }
+
+    .content-card {
+        padding: 24px 18px;
+    }
+
+    .content-card h2 {
+        font-size: 19px;
+    }
+}
